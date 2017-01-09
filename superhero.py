@@ -1,43 +1,8 @@
-class Flight(object):
-
-  def __init__(self):
-    self.air_speed = 0
-    self.max_load = 0
-    self.max_altitude = 0
-
-  def fly(self):
-    print("I am flying at {} m/s".format(self.air_speed))
 
 
-class Running(object):
-
-  def __init__(self):
-    self.ground_speed = 0
-    self.acceleration_rate = 0
-
-  def run(self):
-    pass
 
 
-class Swimming(object):
 
-  def __init__(self):
-    self.swim_speed = 0
-    self.max_depth = 0
-
-  def swim(self):
-    pass
-
-
-class Sidekick():
-
-    def __init__(self, name):
-      self.name = name
-      self.gender = ""
-      self.alter_ego_profession = None
-
-    def __str__(self):
-      return self.name
 
 class Superhero(object):
 
@@ -73,21 +38,10 @@ class Superhero(object):
       return "{} the superhero with the powers: {}".format(self.name, power_output[0:-1])
 
 
-class Superman(Superhero, Flight, Running, Swimming):
-
-  def __init__(self):
-    Superhero.__init__(self, "Superman")
-    self.air_speed = 1000000
 
 
-jimmy_olsen = Sidekick("Jimmy Olsen")
 
-superman = Superman()
-superman.sidekicks.add(jimmy_olsen)
 
-superman.add_power("X-Ray Vision")
-superman.fly()
 
-print(superman.sidekicks)
 
 
