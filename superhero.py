@@ -1,9 +1,3 @@
-
-
-
-
-
-
 class Superhero(object):
 
     def __init__(self, name):
